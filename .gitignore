@@ -1,0 +1,5 @@
+bin
+node_modules
+selenium-debug.log
+reports
+config/config.json

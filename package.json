@@ -1,0 +1,19 @@
+{
+  "name": "gmail-login",
+  "version": "1.0.0",
+  "description": "test nightwatchjs",
+  "main": "login.test.js",
+  "scripts": {
+    "test": "nightwatch tests/login.js"
+  },
+  "keywords": [
+    "nightwatch",
+    "js",
+    "automation"
+  ],
+  "author": "wilder",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^0.9.16"
+  }
+}
