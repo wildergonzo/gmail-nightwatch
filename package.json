@@ -4,7 +4,7 @@
   "description": "test nightwatchjs",
   "main": "login.test.js",
   "scripts": {
-    "test": "nightwatch tests/login.js"
+    "test": "nightwatch tests/send.message.js"
   },
   "keywords": [
     "nightwatch",
