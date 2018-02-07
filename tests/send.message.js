@@ -1,4 +1,4 @@
-const {credentials} = require('../config/config.json');
+const {credentials, message} = require('../config/config.json');
 
 module.exports = {
   before : function(client) {
@@ -12,10 +12,17 @@ module.exports = {
 
   'Send Message': function (client) {   
     const gmailPage = client.page.Gmail();
+    const composerPopup = client.page.Composer();
+    const subject = `test automated ${new Date()}`;
+    const messageBody = 'software testing rocks!';
 
     gmailPage.navigate()
-      .waitForElementVisible("@btnSend")
-      .click('@btnSend')
-      .api.pause(1000); // ready to compose
+      .waitForElementVisible("@btnCompose")
+      .click('@btnCompose')
+      .api.pause(1000);
+    composerPopup.composeMessage(message.to, subject, messageBody);
+      //.waitForElementPresent("@btnSend")
+      //.click('@btnSend')
+      //.api.pause(1000);
   }
 };

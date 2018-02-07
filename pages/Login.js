@@ -1,13 +1,12 @@
 var loginCommands = {
-  login: function(email, pass) {
+  login: function(email, password) {
     this.waitForElementVisible('@email')
         .setValue('@email', email)
         .click('@next')
         .api.pause(1000);
     this.waitForElementVisible('@password')
-        .setValue('@password', pass)
-        .click('@next')
-        //.api.pause(3000);
+        .setValue('@password', password)
+        .click('@next');
     return this;
   }
 };
