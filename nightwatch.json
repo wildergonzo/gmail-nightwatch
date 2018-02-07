@@ -27,7 +27,7 @@
         "path" : ""
       },
       "globals": {
-        "waitForConditionTimeout": 1000
+        "waitForConditionTimeout": 3000
       },
       "desiredCapabilities": {
         "browserName": "chrome",

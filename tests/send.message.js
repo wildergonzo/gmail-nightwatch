@@ -20,9 +20,9 @@ module.exports = {
       .waitForElementVisible("@btnCompose")
       .click('@btnCompose')
       .api.pause(1000);
-    composerPopup.composeMessage(message.to, subject, messageBody);
-      //.waitForElementPresent("@btnSend")
-      //.click('@btnSend')
-      //.api.pause(1000);
+    composerPopup.composeMessage(message.to, subject, messageBody)
+      .waitForElementPresent("@btnSend")
+      .click('@btnSend')
+      .api.pause(1000);
   }
 };

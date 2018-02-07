@@ -24,7 +24,8 @@ module.exports = {
             selector: '.Am.Al.editable.LW-avf'
         },
         btnSend: {
-        	selector: 'div.mt-send'
+        	selector: '//div[@class="T-I J-J5-Ji aoO T-I-atl L3"]',
+        	locateStrategy: 'xpath'
         }
     }
 };
