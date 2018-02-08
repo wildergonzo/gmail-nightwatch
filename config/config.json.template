@@ -5,5 +5,9 @@
     },
     "message": {
         "to": "emal@domain"
+    },
+    "extension": {
+    	"path": "path/to/crx",
+    	"id_locator": "#id"
     }
 }
