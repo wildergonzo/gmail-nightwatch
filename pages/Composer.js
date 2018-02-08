@@ -14,15 +14,9 @@ module.exports = {
     url: 'https://mail.google.com/',
     commands: [composerCommands],
     elements: {
-        txtTo: {
-            selector: 'textarea[name="to"]'
-        },
-        txtSubject: {
-            selector: 'input[name="subjectbox"]'
-        },
-        txaBody: {
-            selector: '.Am.Al.editable.LW-avf'
-        },
+        txtTo: { selector: 'textarea[name="to"]' },
+        txtSubject: { selector: 'input[name="subjectbox"]' },
+        txaBody: { selector: '.Am.Al.editable.LW-avf' },
         btnSend: {
         	selector: '//div[@class="T-I J-J5-Ji aoO T-I-atl L3"]',
         	locateStrategy: 'xpath'

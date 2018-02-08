@@ -1,12 +1,12 @@
 var loginCommands = {
   login: function(email, password) {
-    this.waitForElementVisible('@email')
-        .setValue('@email', email)
-        .click('@next')
+    this.waitForElementVisible('@txtEmail')
+        .setValue('@txtEmail', email)
+        .click('@btnNext')
         .api.pause(1000);
-    this.waitForElementVisible('@password')
-        .setValue('@password', password)
-        .click('@next');
+    this.waitForElementVisible('@txtPassword')
+        .setValue('@txtPassword', password)
+        .click('@btnNext');
     return this;
   }
 };
@@ -15,14 +15,8 @@ module.exports = {
     url: 'https://www.google.com/gmail/',
     commands: [loginCommands],
     elements: {
-        email: {
-            selector: '#identifierId'
-        },
-        next: {
-            selector: 'span.RveJvd.snByac'
-        },
-        password: {
-            selector: 'input.whsOnd.zHQkBf'
-        } 
+        txtEmail: { selector: '#identifierId' },
+        btnNext: { selector: 'span.RveJvd.snByac' },
+        txtPassword: { selector: 'input.whsOnd.zHQkBf'}
     }
 };
