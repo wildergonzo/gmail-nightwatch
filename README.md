@@ -8,6 +8,8 @@ gmail test automation using nightwatch.js
 - [Selenium Server Standalone](http://selenium-release.storage.googleapis.com/index.html)
 - [Chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
+**Extensions:** Create "extension" folder in the root of the project and copy the .crx file in there.
+
 ### Setup:
 
 ```npm install```
