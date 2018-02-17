@@ -6,7 +6,8 @@ var loginCommands = {
         .api.pause(1000);
     this.waitForElementVisible('@txtPassword')
         .setValue('@txtPassword', password)
-        .click('@btnNext');
+        .click('@btnNext')
+        .api.pause(1000);
     return this;
   }
 };

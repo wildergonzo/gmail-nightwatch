@@ -1,4 +1,4 @@
-const { credentials, message } = require('../../config/config.json');
+const { credentials } = require('../../config/config.json');
 const { client } = require('nightwatch-cucumber');
 const { Given, Then, When } = require('cucumber');
 const loginPage = client.page.Login();
