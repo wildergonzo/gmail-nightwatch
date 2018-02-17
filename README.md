@@ -14,4 +14,4 @@ gmail test automation using nightwatch.js
 
 ### Execution:
 
-```npm test```
+```npm run test:chrome```

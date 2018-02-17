@@ -1,11 +1,12 @@
 {
-  "name": "gmail-login",
+  "name": "gmail-nightwatch",
   "version": "1.0.0",
-  "description": "test nightwatchjs",
-  "main": "nightwatch.conf.js",
+  "description": "gmail e2e testing with nightwatchjs",
+  "main": "index.js",
   "scripts": {
     "test": "nightwatch",
-    "test:chrome": "nightwatch --env chrome features"
+    "test:chrome": "nightwatch --env chrome features",
+    "test:debug": "node --inspect node_modules/nightwatch/bin/nightwatch"
   },
   "keywords": [
     "nightwatch",
@@ -14,11 +15,10 @@
   ],
   "author": "wilder",
   "license": "ISC",
-  "dependencies": {
-    "nightwatch": "^0.9.19"
-  },
   "devDependencies": {
     "cucumber": "^4.0.0",
+    "cucumber-pretty": "^1.4.0",
+    "nightwatch": "^0.9.19",
     "nightwatch-cucumber": "^9.1.0"
   }
 }

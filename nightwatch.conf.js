@@ -1,13 +1,15 @@
 require('nightwatch-cucumber')({
   cucumberArgs: [
-  '--require', 'features/step_definitions',
-  '--format', 'json:reports/cucumber.json', 
+  '--require', 'features/step_definitions', 
+  '--format', 'json:reports/cucumber.json',
+  '--format', 'node_modules/cucumber-pretty',
   'features'
   ],
   nightwatchOutput: true
-});
+})
 
 module.exports = {
+  page_objects_path: 'pages',
   output_folder: 'reports',
   custom_assertions_path: '',
   live_output: false,
@@ -31,6 +33,9 @@ module.exports = {
         browserName: 'chrome',
         javascriptEnabled: true,
         acceptSslCerts: true
+      },
+      globals: {
+        waitForConditionTimeout: 1000
       }
     },
     chrome: {
